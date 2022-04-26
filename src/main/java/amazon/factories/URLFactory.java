@@ -10,6 +10,7 @@ import java.net.URL;
 
 @Slf4j
 public class URLFactory {
+	
     private static Config config = EnvFactory.getInstance().getConfig();
 
     private URLFactory() {
@@ -17,7 +18,7 @@ public class URLFactory {
     }
 
     public static URL getHostURL(Host host) {
-        log.info("Getting hostURL for Host: {}", host);
+ //       log.info("Getting hostURL for Host: {}", host);
         try {
             return new URL(config.getString("HOST_URI"));
         } catch (MalformedURLException e) {

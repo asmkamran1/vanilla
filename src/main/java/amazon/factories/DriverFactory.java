@@ -19,12 +19,13 @@ public class DriverFactory {
     private static final Host HOST = Host.parse(config.getString("HOST"));
     private static final Browser BROWSER = Browser.parse(config.getString("BROWSER"));
 
+
     private DriverFactory() {
         throw new IllegalStateException("Static factory class");
     }
 
     public static WebDriver getDriver() {
-        log.info("Getting driver for host: {}", HOST);
+ //       log.info("Getting driver for host: {}", HOST);
         switch (HOST) {
             case LOCALHOST:
                 return getLocalWebDriver();
@@ -38,7 +39,7 @@ public class DriverFactory {
     }
 
     private static WebDriver getLocalWebDriver() {
-        log.info("Getting driver for browser: {}", BROWSER);
+ //       log.info("Getting driver for browser: {}", BROWSER);
         switch (BROWSER) {
             case CHROME:
                 WebDriverManager.chromedriver().setup();
