@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-08T13:28:59 EDT" name="Suite" finished-at="2022-08-08T13:29:38 EDT" duration-ms="39402">
+    <groups>
+    </groups>
+    <test started-at="2022-08-08T13:28:59 EDT" name="Amzon Test" finished-at="2022-08-08T13:29:38 EDT" duration-ms="39402">
+      <class name="homepage.AmazonTest">
+        <test-method signature="landingPage()[pri:0, instance:homepage.AmazonTest@1757cd72]" started-at="2022-08-08T13:28:59 EDT" name="landingPage" finished-at="2022-08-08T13:29:13 EDT" duration-ms="13750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- landingPage -->
+        <test-method signature="shopByDepartment()[pri:0, instance:homepage.AmazonTest@1757cd72]" started-at="2022-08-08T13:29:13 EDT" name="shopByDepartment" finished-at="2022-08-08T13:29:17 EDT" depends-on-methods="homepage.AmazonTest.landingPage" duration-ms="3890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shopByDepartment -->
+        <test-method signature="shopSamsungTV()[pri:0, instance:homepage.AmazonTest@1757cd72]" started-at="2022-08-08T13:29:17 EDT" name="shopSamsungTV" finished-at="2022-08-08T13:29:23 EDT" depends-on-methods="homepage.AmazonTest.shopByDepartment" duration-ms="5878" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shopSamsungTV -->
+        <test-method signature="sortHighToLow()[pri:0, instance:homepage.AmazonTest@1757cd72]" started-at="2022-08-08T13:29:23 EDT" name="sortHighToLow" finished-at="2022-08-08T13:29:26 EDT" depends-on-methods="homepage.AmazonTest.shopSamsungTV" duration-ms="2933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortHighToLow -->
+        <test-method signature="select2ndSearchResult()[pri:0, instance:homepage.AmazonTest@1757cd72]" started-at="2022-08-08T13:29:26 EDT" name="select2ndSearchResult" finished-at="2022-08-08T13:29:38 EDT" depends-on-methods="homepage.AmazonTest.sortHighToLow" duration-ms="12854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- select2ndSearchResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:homepage.AmazonTest@1757cd72]" started-at="2022-08-08T13:29:38 EDT" name="tearDown" finished-at="2022-08-08T13:29:38 EDT" duration-ms="62" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- homepage.AmazonTest -->
+    </test> <!-- Amzon Test -->
+  </suite> <!-- Suite -->
+</testng-results>
