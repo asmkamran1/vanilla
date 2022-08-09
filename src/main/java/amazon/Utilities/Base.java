@@ -44,7 +44,7 @@ public class Base extends GenericMethods {
 
 	@AfterClass
 	public void tearDown() {
-		driver.close();
+		driver.quit();
 		System.out.println("Browser is closed.");
 	}
 }

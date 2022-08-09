@@ -49,7 +49,7 @@ public class PageObjects {
 		TelevisionLink.click();
 	}
 
-	@FindBy(xpath = "//*[@id=\"s-refinements\"]/div[21]/ul/li[5]/span/a/span")
+	@FindBy(xpath = "//*[@id=\"s-refinements\"]/div[21]/ul/li[4]/span/a/div/label/i")
 	WebElement SamsungBrand;
 
 	public WebElement SamsungBrand() {

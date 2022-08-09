@@ -31,13 +31,14 @@ public class AmazonTest extends Base {
 // Scenario 2: Verify that user is able to scroll to Shop by Department and click on Television department
 
 	@Test(dependsOnMethods = { "landingPage" })
-	public void shopByDepartment() throws IOException {
+	public void shopByDepartment() throws IOException, InterruptedException {
 		PageObjects obj = new PageObjects(driver);
 		obj.clickHamburgerMenu();
 		JavascriptExecutor je = (JavascriptExecutor) driver;
 		je.executeScript("arguments[0].scrollIntoView(true);", obj.TVAppliancesElectronicsLink());
 		obj.clickOnTVAppliancesElectronicsLink();
 		obj.clickOnTelevisionLink();
+		waitByThread(3000);
 
 	}
 
@@ -48,17 +49,21 @@ public class AmazonTest extends Base {
 		PageObjects obj = new PageObjects(driver);
 		JavascriptExecutor je = (JavascriptExecutor) driver;
 		je.executeScript("arguments[0].scrollIntoView(true);", obj.SamsungBrand());
+		waitByThread(2000);
 		obj.clickOnSamsungBrand();
+		waitByThread(3000);
 
 	}
 
 // Scenario 4: Verify that user is able to sort the search result from high to low
 
 	@Test(dependsOnMethods = { "shopSamsungTV" })
-	public void sortHighToLow() {
+	public void sortHighToLow() throws InterruptedException {
 		PageObjects obj = new PageObjects(driver);
 		obj.clickDropdown();
+		waitByThread(1000);
 		obj.clicksortHighToLow();
+		waitByThread(2000);
 	}
 
 //Scenario 5: Verify that user is able to choose the 2nd search result of Samsung TV
